@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>About Us</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+  <style>
+	body {
+		  margin: 0;
+		  font-family: Arial, Helvetica, sans-serif;
+					background-image: url('images/batuanaerialview.jpg');
+					background-repeat: no-repeat;
+					background-attachment: fixed;
+					background-size: cover;
+		}
+	  .fixfix
+        {
+            background: rgba(0,0,0,0.7);
+            border: none;
+			height: 100%;
+            width: 100%;
+			padding: 30px;
+			font-size: 13px;
+        }
+		#back2Top {
+				width: 40px;
+				line-height: 40px;
+				overflow: hidden;
+				z-index: 999;
+				display: none;
+				cursor: pointer;
+				-moz-transform: rotate(270deg);
+				-webkit-transform: rotate(270deg);
+				-o-transform: rotate(270deg);
+				-ms-transform: rotate(270deg);
+				transform: rotate(270deg);
+				position: fixed;
+				bottom: 33px;
+				right: 33px;
+				background: rgba(204,102,0,0.7);
+				color: rgba(17.6, 17.6, 18.8,0.8);
+				text-align: center;
+				font-size: 30px;
+				text-decoration: none;
+				border-radius: 8px;
+			}
+			#back2Top:hover {
+				background-color: rgba(17.6, 17.6, 18.8,0.8);
+				color: rgba(204,102,0,0.7);
+			}
+  .nav-tabs li a {
+    color: #777;
+  }
+  .navbar {
+    font-family: Arial;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+	border-radius: 0;
+    font-size: 13px !important;
+    opacity: 0.9;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+  }
+  .navbar li a, .navbar { 
+    color: #d5d5d5 !important;
+  }
+  .navbar-brand { 
+    color: #CC6600 !important;
+	font-family: verdana;
+	font-size: 14px;
+  }
+  .navbar-nav li a:hover {
+    color: #fff !important;
+	background-color: #CC6600 !important;
+  }
+  .navbar-nav li a.active {
+    color: #fff !important;
+    background-color: #CC6600 !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+  .open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+    color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+    background-color: red !important;
+  }
+  footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }  
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }
+  html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: rgba(204,102,0,0.5);
+  border-radius: 10px;
+}
+
+.container {
+  padding: 14px;
+  width: 100%;
+  color: #fff;
+  font-size: 11px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: #fff;
+  font-size: 12px;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: #CC6600;
+  background-color: #2d2d30;
+  text-align: center;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 5px;
+  background: rgba(0,0,0,0.7);
+}
+
+.button:hover {
+  background-color: #2d2d30;
+}
+  </style>
+  
+  
+</head>
+
+<a id="back2Top" title="Back to Top" href="#">&#10148;</a>
+
+<img class="img-responsive" src="images/batuanwebbanner.png" style="width:100%; height:100%;">
+
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			  </button>
+			  <!--<a class="navbar-brand" href="#myPage">Batuan</a>-->
+			  <a class="navbar-brand">Meet the Team</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a style="font-family:verdana" href="index.html">Home</a></li>
+				<li><a style="font-family:verdana" href="summary.html">Summary</a></li>
+				<li><a style="font-family:verdana" href="room.html">Lodging</a></li>
+				<li><a style="font-family:verdana" href="wheretoeat.html">Dining</a></li>
+				<li><a style="font-family:verdana" href="touristspots.html">Tourist Spots</a></li>
+				<li><a class="active" style="font-family:verdana" href="aboutus.html">About Us</a></li>
+				<!--<li><a style="font-family:verdana" href="indexii.php">Sample</a></li>-->
+				<!--<li><a style="font-family:verdana" href="welcometobatuan.php">Sample</a></li>-->
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+
+
+	<div class="col-md-12 fixfix" >
+		<div class="row">
+		  <div class="column">
+			<div class="card">
+			  <img src="images/halette.jpg" alt="Halette J. Bandong" style="width:100%">
+			  <div class="container">
+				<h5>Halette J. Bandong</h5>
+				<br>
+				<h6>BSCS 3-A</h6>
+				<p class="title">Project Leader</p>
+				<!--<p>Some text that describes me lorem ipsum ipsum lorem.</p>-->
+				<p style="color:#FF8C00">halettebandong97@gmail.com</p>
+				<p><center><button class="button" onclick="location.href='mailto:halettebandong97@gmail.com';">Contact</button></center></p>
+			  </div>
+			</div>
+		  </div>
+
+			 <div class="column">
+			<div class="card">
+			  <img src="images/jen.jpg" alt="Jennifer S. Cajegas" style="width:100%">
+			  <div class="container">
+				<h5>Jennifer S. Cajegas</h5>
+				<br>
+				<h6>BSCS 3-C</h6>
+				<p class="title">Member</p>
+				<p style="color:#FF8C00">cajegas0807@gmail.com</p>
+				<p><center><button class="button" onclick="location.href='mailto:cajegas0807@gmail.com';">Contact</button></center></p>
+			  </div>
+			</div>
+		  </div>
+		  
+		   <div class="column">
+			<div class="card">
+			  <img src="images/belle.jpg" alt="Jonebelle L. Espina" style="width:100%">
+			  <div class="container">
+				<h5>Jonebelle L. Espina</h5>
+				<br>
+				<h6>BSCS 3-A</h6>
+				<p class="title">Member</p>
+				<p style="color:#FF8C00">bellespina938@gmail.com</p>
+				<p><center><button class="button" onclick="location.href='mailto:bellespina938@gmail.com';">Contact</button></center></p>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="column">
+			<div class="card">
+			  <img src="images/she.jpg" alt="Shela Mae P. Polinar" style="width:100%">
+			  <div class="container">
+				<h5>Shela Mae P. Polinar</h5>
+				<br>
+				<h6>BSCS 3-A</h6>
+				<p class="title">Member</p>
+				<p style="color:#FF8C00">shelamaepolinar01@gmail.com</p>
+				<p><center><button class="button" onclick="location.href='mailto:shelamaepolinar01@gmail.com';">Contact</button></center></p>
+			  </div>
+			</div>
+		  </div>
+		  
+		  <div class="column">
+			<div class="card">
+			  <img src="images/bangoy.jpg" alt="Maria Fe J. Bangoy" style="width:100%">
+			  <div class="container">
+				<h5>Maria Fe J. Bangoy</h5>
+				<br>
+				<h6>BSCS 3-C</h6>
+				<p class="title">Member</p>
+				<p style="color:#FF8C00">mariafebangoy5@gmail.com</p>
+				<p><center><button class="button" onclick="location.href='mailto:mariafebangoy5@gmail.com';">Contact</button></center></p>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		</div>
+
+
+<script>
+/*Scroll to top when arrow up clicked BEGIN*/
+$(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 100) {
+        $('#back2Top').fadeIn();
+    } else {
+        $('#back2Top').fadeOut();
+    }
+});
+$(document).ready(function() {
+    $("#back2Top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+});
+ /*Scroll to top when arrow up clicked END*/
+</script>
+
+
+</body>
+</html>
